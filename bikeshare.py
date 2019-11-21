@@ -157,7 +157,7 @@ def user_stats(df):
     # TO DO: Display counts of gender
     try:
         print('Counts of gender: \n', df['Gender'].value_counts())
-    except KeyError as key:     # since there are no gender column in the washington dataset.. 
+    except KeyError:     # since there are no gender column in the washington dataset.. 
         print('No Gender given from the Washington DataSet..')
 
     # TO DO: Display earliest, most recent, and most common year of birth
@@ -165,7 +165,7 @@ def user_stats(df):
 	    print('The earliest year of birth is: ', df['Birth Year'].min())
 	    print('The most recent year of birth is: ', df['Birth Year'].max())
 	    print('The most common year of birth is: ', st.mode(df['Birth Year']))
-    except KeyError as key:     # Since there are no gender column in the washington dataset.. 
+    except KeyError:     # Since there are no gender column in the washington dataset.. 
         print('No Birth Year given in Washington..')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
