@@ -10,4 +10,4 @@ In this project, we used data provided by **Motivate**, a bike share system prov
 For this project we used three CSV data files namely _chicago.csv_, _washington.csv_ and _new_york_city.csv_
 
 ### Credits
-
+All of the data we used for this project were provided by [Motivate](https://www.motivateco.com)
